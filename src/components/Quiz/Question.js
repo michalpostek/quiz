@@ -20,7 +20,7 @@ const Question = () => {
         setTimeout(() => {
             checkAnswer(correct);
             setIsAnswered(false);
-        }, 0);
+        }, 1500);
     }
 
     return (
