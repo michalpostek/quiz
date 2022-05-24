@@ -1,7 +1,7 @@
 export const lightColors = {
-    primary: "",
-    primaryFont: "",
-    secondaryFont: "",
+    primary: "#87ceeb",
+    primaryFont: "#202A44",
+    secondaryFont: "#7F680B",
     correct: "#00FF00",
     incorrect: "#ED4337",
 }

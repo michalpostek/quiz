@@ -20,11 +20,11 @@ const App = () => {
 	const [questions, setQuestions] = useState(null);
 	const [error, setError] = useState(null);
 
-	// const toggleColors = () => {
-	// 	colors === lightColors
-	// 		? setColors(darkColors)
-	// 		: setColors(lightColors);
-	// }
+	const toggleColors = () => {
+		colors === lightColors
+			? setColors(darkColors)
+			: setColors(lightColors);
+	}
 
 	const startGame = category => {
 		axios
@@ -52,7 +52,10 @@ const App = () => {
 		<ThemeProvider theme={{colors, fontSizes}}>
 			<GlobalStyles />
 			<Wrapper>
-				<Header />
+				<Header 
+					quitGame={quitGame} 
+					toggleColors={toggleColors} 
+				/>
 				<MainSection>
 					{questions 
 						? <Quiz quit={quitGame} questions={questions} /> 
