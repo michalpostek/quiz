@@ -14,8 +14,6 @@ const Question = () => {
     const { questions, tries, checkAnswer } = useContext(QuizContext);
     const { question, category } = questions[tries];
 
-    console.log(category)
-
     const handleCheckAnswer = correct => {
         if (isAnswered) return;
         setIsAnswered(true);
