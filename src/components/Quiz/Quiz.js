@@ -15,10 +15,12 @@ const Quiz = ({ questions, quit }) => {
     const [userAnswers, setUserAnswers] = useState([]);
 
     const checkAnswer = correct => {
-        setUserAnswers([correct, ...userAnswers]);
         setTries(tries + 1);
         setPoints(points + correct);
         setGameOver(tries === questions.length - 1);
+        gameOver 
+            ? setGameOver([])
+            : setUserAnswers([correct, ...userAnswers]);
     }
 
     return (
