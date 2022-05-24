@@ -18,10 +18,25 @@ export const StyledHeader = styled.header`
 
 export const ButtonsWrapper = styled.div`
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 4vw;
+    top: 4vh;
+    display: flex;
 
     button {
-        
+        background-color: rgba(255, 255, 255, 0.1);
+        color: ${props => props.theme.colors.secondaryFont};
+        border: none;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0.2vw;
+        transition: 0.2s;
+
+        &:hover {
+            cursor: pointer;
+            background-color: ${props => props.theme.colors.secondaryFont};
+            color: ${props => props.theme.colors.primary};
+        }
     }
 `
