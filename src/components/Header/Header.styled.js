@@ -31,6 +31,7 @@ export const ButtonsWrapper = styled.div`
         align-items: center;
         justify-content: center;
         margin: 0 0.2vw;
+        padding: 0.5vh;
         transition: 0.2s;
 
         &:hover {
