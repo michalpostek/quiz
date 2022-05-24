@@ -1,0 +1,38 @@
+import { Fragment, useState } from "react";
+
+import QuizContext from "../../contexts/quiz";
+
+import { StyledQuiz } from "../../styles/Quiz.styled";
+
+import Counter from "./Counter";
+import Question from "./Question";
+import Scoreboard from "./Scoreboard";
+
+const Quiz = ({ questions, quit }) => {
+    const [tries, setTries] = useState(0);
+    const [points, setPoints] = useState(0);
+    const [gameOver, setGameOver] = useState(false);
+
+    const checkAnswer = correct => {
+        setTries(tries + 1);
+        setPoints(points + correct);
+        setGameOver(tries === questions.length - 1);
+    }
+
+    return (
+        <StyledQuiz>
+            <QuizContext.Provider value={{ questions, tries, quit, checkAnswer }}>
+                {gameOver ? (
+                        <Scoreboard points={points} tries={tries} />
+                    ) : (
+                        <Fragment>
+                            <Counter />
+                            <Question />
+                        </Fragment>
+                    )}
+            </QuizContext.Provider>
+        </StyledQuiz>
+    );
+}
+
+export default Quiz;
