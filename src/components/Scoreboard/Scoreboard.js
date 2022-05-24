@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import { StyledScoreboard } from "../../styles/Quiz.styled";
+import { StyledScoreboard } from "./Scoreboard.styled";
 
 import QuizContext from "../../contexts/quiz";
 

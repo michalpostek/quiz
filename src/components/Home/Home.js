@@ -2,7 +2,7 @@ import useFetch from "../../hooks/useFetch";
 
 import LoadingSpinner from "../LoadingSpinner/LoadingSpinner";
 
-import { StyledHome, CategoriesWrapper, Message } from "../../styles/Home.styled";
+import { StyledHome, CategoriesWrapper, Message } from "./Home.styled";
 
 const Home = ({ startGame }) => {
     const { data, error, loading } = useFetch(`https://opentdb.com/api_category.php`);

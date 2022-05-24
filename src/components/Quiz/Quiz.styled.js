@@ -1,13 +1,6 @@
 import styled from "styled-components";
 
-export const StyledQuiz = styled.div`
-    
-`;
-
-export const StyledCounter = styled.p`
-    font-size: ${props => props.theme.fontSizes.small};
-    color: ${props => props.theme.colors.secondaryFont};
-`;
+export const StyledQuiz = styled.div``;
 
 export const StyledQuestion = styled.div`
     h4 {
@@ -64,38 +57,3 @@ export const AnswersWrapper = styled.div`
         grid-template-rows: repeat(4, max(180px, 22vh));
     }
 `
-
-export const StyledScoreboard = styled.div`
-    p {
-        font-size: ${props => props.theme.fontSizes.xxLarge};
-    }
-
-    button {
-        margin-top: 4vh;
-        font-size: ${props => props.theme.fontSizes.medium};
-        padding: 1vh 1vw;
-        background: none;
-        border: 2px solid ${props => props.theme.colors.primaryFont};
-        border-radius: 1vw;
-        transition: 0.4s;
-        color: ${props => props.theme.colors.primaryFont};
-
-        :hover {
-            cursor: pointer;
-            border-color: ${props => props.theme.colors.secondaryFont};
-            color: ${props => props.theme.colors.primary};
-            background: ${props => props.theme.colors.secondaryFont};
-        }
-    }
-`;
-
-export const StyledTimer = styled.div`
-    h6 {
-        color: ${props => props.theme.colors.secondaryFont};
-        font-size: ${props => props.theme.fontSizes.xxLarge};
-    }
-
-    p {
-        font-size: ${props => props.theme.fontSizes.small};
-    }
-`;

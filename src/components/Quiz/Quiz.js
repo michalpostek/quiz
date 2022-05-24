@@ -2,11 +2,11 @@ import { Fragment, useState } from "react";
 
 import QuizContext from "../../contexts/quiz";
 
-import { StyledQuiz } from "../../styles/Quiz.styled";
+import { StyledQuiz } from "./Quiz.styled";
 
-import Counter from "./Counter";
+import Counter from "../Counter/Counter";
 import Question from "./Question";
-import Scoreboard from "./Scoreboard";
+import Scoreboard from "../Scoreboard/Scoreboard";
 
 const Quiz = ({ questions, quit }) => {
     const [tries, setTries] = useState(0);

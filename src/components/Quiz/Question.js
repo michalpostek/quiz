@@ -1,9 +1,9 @@
 import { useContext, useState } from "react";
 
-import { StyledQuestion } from "../../styles/Quiz.styled";
+import { StyledQuestion } from "./Quiz.styled";
 
 import Answers from "./Answers";
-import Timer from "./Timer";
+import Timer from "../Timer/Timer";
 
 import QuizContext from "../../contexts/quiz";
 import createMarkup from "../../helpers/createMarkup";

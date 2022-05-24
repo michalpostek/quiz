@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { StyledTimer } from "../../styles/Quiz.styled";
+import { StyledTimer } from "./Timer.styled";
 
 const Timer = ({ time, timeOver }) => {
     const [timeLeft, setTimeLeft] = useState(time);

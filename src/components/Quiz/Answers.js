@@ -1,6 +1,6 @@
 import { useState, useContext } from "react";
 
-import { AnswersWrapper } from "../../styles/Quiz.styled";
+import { AnswersWrapper } from "./Quiz.styled";
 
 import QuizContext from "../../contexts/quiz";
 import createMarkup from "../../helpers/createMarkup";
