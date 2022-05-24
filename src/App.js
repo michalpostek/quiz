@@ -53,6 +53,7 @@ const App = () => {
 			<GlobalStyles />
 			<Wrapper>
 				<Header 
+					questions={questions}
 					quitGame={quitGame} 
 					toggleColors={toggleColors} 
 				/>
