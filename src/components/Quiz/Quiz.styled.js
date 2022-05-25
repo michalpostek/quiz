@@ -1,14 +1,12 @@
 import styled from "styled-components";
 
-export const StyledQuiz = styled.div``;
+import { Flex } from "../../styles/mixins/Flex";
 
 export const StyledQuestion = styled.div`
     h4 {
         font-size: ${props => props.theme.fontSizes.xLarge};
         min-height: 12vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        ${Flex({ direction: 'row', justify: 'center', align: 'center' })};
     }
 
     h5 {

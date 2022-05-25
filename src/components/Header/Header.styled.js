@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Flex } from "../../styles/mixins/Flex";
 
 export const StyledHeader = styled.header`
     padding: 5vh 0 2vh;
@@ -23,13 +24,11 @@ export const ButtonsWrapper = styled.div`
     display: flex;
 
     button {
+        ${Flex({ direction: 'row', justify: 'center', align: 'center' })};
         background-color: rgba(255, 255, 255, 0.1);
         color: ${props => props.theme.colors.secondaryFont};
         border: none;
         border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
         margin: 0 0.2vw;
         padding: 0.4vh;
         transition: 0.2s;

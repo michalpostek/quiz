@@ -2,8 +2,6 @@ import { Fragment, useState } from "react";
 
 import QuizContext from "../../contexts/quiz";
 
-import { StyledQuiz } from "./Quiz.styled";
-
 import Counter from "../Counter/Counter";
 import Question from "./Question";
 import Scoreboard from "../Scoreboard/Scoreboard";
@@ -20,7 +18,7 @@ const Quiz = ({ questions, quit }) => {
     }
 
     return (
-        <StyledQuiz>
+        <div>
             <QuizContext.Provider value={{ questions, tries, quit, checkAnswer }}>
                 {gameOver ? (
                         <Scoreboard 
@@ -34,7 +32,7 @@ const Quiz = ({ questions, quit }) => {
                         </Fragment>
                     )}
             </QuizContext.Provider>
-        </StyledQuiz>
+        </div>
     );
 }
 
