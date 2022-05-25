@@ -54,6 +54,6 @@ export const AnswersWrapper = styled.div`
 
     @media (max-width: 768px) {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, max(180px, 22vh));
+        grid-template-rows: repeat(4, 1fr);
     }
 `

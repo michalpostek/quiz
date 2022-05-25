@@ -9,7 +9,7 @@ const Scoreboard = ({ points, tries }) => {
 
     return (
         <StyledScoreboard>
-            <p>Your results is {points} / {tries}</p>
+            <p>Your result is {points} / {tries}</p>
             <button onClick={quit}>
                 New Game
             </button>

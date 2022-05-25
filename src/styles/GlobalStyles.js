@@ -12,6 +12,10 @@ export const GlobalStyles = createGlobalStyle`
         background: ${props => props.theme.colors.primary};
         color: ${props => props.theme.colors.primaryFont};
         text-align: center;
+
+        @media (max-width: 768px) {
+            font-size: 75%;
+        }
     }
 `;
 

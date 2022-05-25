@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    padding: 2vh 0;
+    padding: 5vh 0 2vh;
     position: relative;
 
     h1 {
@@ -19,7 +19,7 @@ export const StyledHeader = styled.header`
 export const ButtonsWrapper = styled.div`
     position: absolute;
     right: 4vw;
-    top: 4vh;
+    top: 2vh;
     display: flex;
 
     button {
@@ -31,7 +31,7 @@ export const ButtonsWrapper = styled.div`
         align-items: center;
         justify-content: center;
         margin: 0 0.2vw;
-        padding: 0.5vh;
+        padding: 0.4vh;
         transition: 0.2s;
 
         &:hover {
