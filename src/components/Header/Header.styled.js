@@ -18,7 +18,7 @@ export const StyledHeader = styled.header`
 
 export const ButtonsWrapper = styled.div`
     position: absolute;
-    right: 4vw;
+    right: 0;
     top: 2vh;
     display: flex;
 

@@ -11,7 +11,7 @@ import { Wrapper } from "./styles/Wrapper";
 import { MainSection } from "./styles/MainSection";
 
 import Header from "./components/Header/Header";
-
+import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Quiz from "./components/Quiz/Quiz";
 
@@ -63,6 +63,7 @@ const App = () => {
 						: <Home startGame={startGame} />
 					}
 				</MainSection>
+				<Footer />
 			</Wrapper>
 		</ThemeProvider>
 	);

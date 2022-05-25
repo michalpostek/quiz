@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
 export const MainSection = styled.main`
-    padding: 2vh 4vw;
+    min-height: 50vh;
 `;
