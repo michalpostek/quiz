@@ -12,15 +12,11 @@ const Quiz = ({ questions, quit }) => {
     const [tries, setTries] = useState(0);
     const [points, setPoints] = useState(0);
     const [gameOver, setGameOver] = useState(false);
-    const [userAnswers, setUserAnswers] = useState([]);
 
     const checkAnswer = correct => {
         setTries(tries + 1);
         setPoints(points + correct);
         setGameOver(tries === questions.length - 1);
-        gameOver 
-            ? setGameOver([])
-            : setUserAnswers([correct, ...userAnswers]);
     }
 
     return (
@@ -28,7 +24,6 @@ const Quiz = ({ questions, quit }) => {
             <QuizContext.Provider value={{ questions, tries, quit, checkAnswer }}>
                 {gameOver ? (
                         <Scoreboard 
-                            userAnswers={userAnswers} 
                             points={points} 
                             tries={tries}
                         />

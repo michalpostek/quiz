@@ -1,25 +1,6 @@
 import styled from "styled-components";
 
 export const StyledScoreboard = styled.div`
-    table {
-        border-collapse: collapse;
-        margin: 4vh auto;
-        border: 2px solid ${props => props.theme.colors.primaryFont};
-
-        th, td {
-            padding: 1vh;
-            border: 2px solid ${props => props.theme.colors.primaryFont};
-        }
-
-        .correct {
-            color: ${props => props.theme.colors.correct};
-        }
-
-        .incorrect {
-            color: ${props => props.theme.colors.incorrect};
-        }
-    }
-
     p {
         font-size: ${props => props.theme.fontSizes.xxLarge};
         color: ${props => props.theme.colors.secondaryFont};
