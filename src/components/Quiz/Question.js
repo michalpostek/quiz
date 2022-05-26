@@ -20,7 +20,7 @@ const Question = () => {
         setTimeout(() => {
             checkAnswer(correct);
             setIsAnswered(false);
-        }, 1500);
+        }, 1000);
     }
 
     return (
@@ -31,7 +31,7 @@ const Question = () => {
                 isAnswered={isAnswered}
                 handleCheckAnswer={handleCheckAnswer} 
             />
-            {isAnswered || <Timer time={10} timeOver={handleCheckAnswer} />}
+            {isAnswered || <Timer time={15} timeOver={handleCheckAnswer} />}
         </StyledQuestion>
     );
 }
