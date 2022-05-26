@@ -7,11 +7,12 @@ export const StyledQuestion = styled.div`
         font-size: ${props => props.theme.fontSizes.xLarge};
         min-height: 12vh;
         ${Flex({ direction: 'row', justify: 'center', align: 'center' })};
-    }
 
-    h5 {
-        color: ${props => props.theme.colors.secondaryFont};
-        font-size: ${props => props.theme.fontSizes.small};
+        @media (max-width: 768px) {
+            font-size: ${props => props.theme.fontSizes.large};
+            margin: 1vh 0;
+            min-height: 20vh;
+        }
     }
 `;
 

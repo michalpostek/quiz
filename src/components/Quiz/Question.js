@@ -12,7 +12,7 @@ const Question = () => {
     const [isAnswered, setIsAnswered] = useState(false);
 
     const { questions, tries, checkAnswer } = useContext(QuizContext);
-    const { question, category } = questions[tries];
+    const { question } = questions[tries];
 
     const handleCheckAnswer = correct => {
         if (isAnswered) return;
@@ -26,7 +26,6 @@ const Question = () => {
     return (
         <StyledQuestion>
             <h4 dangerouslySetInnerHTML={createMarkup(question)} />
-            <h5>{category}</h5>
             <Answers 
                 isAnswered={isAnswered}
                 handleCheckAnswer={handleCheckAnswer} 

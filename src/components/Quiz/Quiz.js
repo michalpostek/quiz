@@ -2,7 +2,7 @@ import { Fragment, useState } from "react";
 
 import QuizContext from "../../contexts/quiz";
 
-import Counter from "../Counter/Counter";
+import GameInfo from "../GameInfo/GameInfo";
 import Question from "./Question";
 import Scoreboard from "../Scoreboard/Scoreboard";
 
@@ -27,7 +27,7 @@ const Quiz = ({ questions, quit }) => {
                         />
                     ) : (
                         <Fragment>
-                            <Counter />
+                            <GameInfo />
                             <Question />
                         </Fragment>
                     )}
