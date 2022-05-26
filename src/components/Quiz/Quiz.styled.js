@@ -11,7 +11,7 @@ export const StyledQuestion = styled.div`
         @media (max-width: 768px) {
             font-size: ${props => props.theme.fontSizes.large};
             margin: 1vh 0;
-            min-height: 20vh;
+            min-height: 16vh;
         }
     }
 `;

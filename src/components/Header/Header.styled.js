@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Flex } from "../../styles/mixins/Flex";
 
 export const StyledHeader = styled.header`
-    padding: 5vh 0 2vh;
+    padding: 3vh 0 3vh;
     position: relative;
 
     h1 {
@@ -15,12 +15,16 @@ export const StyledHeader = styled.header`
         font-size: ${props => props.theme.fontSizes.medium};
         color: ${props => props.theme.colors.secondaryFont};
     }
+
+    @media (max-width: 768px) {
+        padding: 6vh 0 2vh;
+    }
 `;
 
 export const ButtonsWrapper = styled.div`
     position: absolute;
     right: 0;
-    top: 2vh;
+    top: 1vh;
     display: flex;
 
     button {
@@ -29,7 +33,7 @@ export const ButtonsWrapper = styled.div`
         color: ${props => props.theme.colors.secondaryFont};
         border: none;
         border-radius: 50%;
-        margin: 0 0.2vw;
+        margin-left: 0.5vw;
         padding: 0.4vh;
         transition: 0.2s;
 
