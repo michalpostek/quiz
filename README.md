@@ -1,18 +1,14 @@
 # how to use
 
-## clone repo
+## get repo
 
 ### run cmd
-### type 'git clone https://github.com/michalpostek/quiz.git'
-
-## install dependencies
-
-### type 'cd quiz'
-### type 'npm install'
-
-## run app
-
-### type 'npm start'
+### clone repo
+type 'git clone https://github.com/michalpostek/quiz.git'
+type 'cd quiz'
+### install dependencies and run
+type 'npm install'
+type 'npm run'
 
 # check live demo
 
