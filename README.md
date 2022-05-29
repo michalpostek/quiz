@@ -1,15 +1,19 @@
 # how to use
 
-run cmd
+## clone repo
 
-'git clone https://github.com/michalpostek/emoji-search.git'
+### run cmd
+### type 'git clone https://github.com/michalpostek/quiz.git'
 
-'cd emoji-search'
+## install dependencies
 
-'npm install'
+### type 'cd quiz'
+### type 'npm install'
 
-'npm start'
+## run app
 
-# live demo
+### type 'npm start'
+
+# check live demo
 
 https://michalpostek.github.io/quiz/
