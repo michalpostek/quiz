@@ -16,6 +16,6 @@ type 'npm install'
 
 type 'npm run' 
 
-# check live demo
+## check live demo
 
 https://michalpostek.github.io/quiz/
