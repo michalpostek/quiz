@@ -1,3 +1,7 @@
+# live demo
+
+https://michalpostek.github.io/quiz/
+
 # how to use
 
 ### run cmd
@@ -21,7 +25,3 @@ type 'npm install'
 ```bash
 type 'npm run' 
 ```
-
-# live demo
-
-https://michalpostek.github.io/quiz/
