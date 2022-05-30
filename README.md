@@ -1,7 +1,5 @@
 # how to use
 
-## get repo and run locally
-
 ### run cmd
 
 ### clone repo
@@ -24,6 +22,6 @@ type 'npm install'
 type 'npm run' 
 ```
 
-## live demo
+# live demo
 
 https://michalpostek.github.io/quiz/
