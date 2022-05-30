@@ -27,7 +27,10 @@
 <h2>Installation</h2>
 
 <ol>
-    <li>Run cmd</li>
+    <li>
+        <p>Run cmd and change current working directory to location where you want to clone files</p>
+        <pre>cd path/to/folder </pre>
+    </li>
     <li>
         <p>Clone repository</p>
         <pre>git clone https://github.com/michalpostek/quiz.git</pre>
