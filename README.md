@@ -2,7 +2,7 @@
 
 <p> Simple React Quiz App that shows how to work with React Hooks, Custom Hooks, REST API, Themes etc.</p>
 <p>App is powered by <a href="https://opentdb.com/api_config.php">Open Trivia Database</a>.</p>
-<p>Check <a href="https://michalpostek.github.io/quiz/">Live demo</a>.</p>
+<p>Check <a target="_blank" href="https://michalpostek.github.io/quiz/">Live demo</a>.</p>
 
 <h2>Technologies</h2>
 
