@@ -1,8 +1,16 @@
-# live demo
+### live demo
 
 https://michalpostek.github.io/quiz/
 
 # how to use
+
+### select a category
+
+### choose the correct answer within 15 seconds, otherwise you will lose a point
+
+### after answering all 10 questions, you will see the results
+
+# how to install
 
 ### run cmd
 
@@ -12,15 +20,19 @@ https://michalpostek.github.io/quiz/
 type 'git clone https://github.com/michalpostek/quiz.git'
 ```
 
-### install dependencies and run app
+### go to app directory
 
 ```bash
 type 'cd quiz'
 ```
 
+### install dependencies
+
 ```bash
 type 'npm install'
 ```
+
+### run app
 
 ```bash
 type 'npm run' 
