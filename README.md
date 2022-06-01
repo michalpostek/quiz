@@ -36,7 +36,9 @@
     </li>
     <li>
         <p>Go to app folder</p>
-        <pre>cd quiz</pre>
+        ```properties
+        cd quiz
+        ```
     </li>
     <li>
         <p>Install dependencies</p>
