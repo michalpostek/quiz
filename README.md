@@ -10,7 +10,6 @@
 <ul>
     <li><b>React</b> version 18.1.0</li>
     <li><b>Axios</b> version 0.27.2</li>
-    <li><b>React Icons</b> version 4.3.1</li>
     <li><b>Styled Components</b> version 5.3.5</li>
 </ul>
 
