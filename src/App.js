@@ -48,8 +48,12 @@ const App = () => {
 
 	const quitGame = () => setQuestions(null);
 
+	if (error) {
+		return <p>Error has been occured.</p>
+	}
+
 	return (
-		<ThemeProvider theme={{colors, fontSizes}}>
+		<ThemeProvider theme={{ colors, fontSizes }}>
 			<GlobalStyles />
 			<Wrapper>
 				<Header 
