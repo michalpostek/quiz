@@ -21,16 +21,16 @@ const Quiz = ({ questions, quit }) => {
         <div>
             <QuizContext.Provider value={{ questions, tries, quit, checkAnswer }}>
                 {gameOver ? (
-                        <Scoreboard 
-                            points={points} 
-                            tries={tries}
-                        />
-                    ) : (
-                        <Fragment>
-                            <GameInfo />
-                            <Question />
-                        </Fragment>
-                    )}
+                    <Scoreboard 
+                        points={points} 
+                        tries={tries}
+                    />
+                ) : (
+                    <Fragment>
+                        <GameInfo />
+                        <Question />
+                    </Fragment>
+                )}
             </QuizContext.Provider>
         </div>
     );

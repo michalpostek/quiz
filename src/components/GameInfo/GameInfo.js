@@ -11,8 +11,12 @@ const GameInfo = () => {
 
     return (
         <StyledGameInfo>
-            <p>{category}</p>
-            <ProgressBar progress={progress} />
+            <p>
+                {category}
+            </p>
+            <ProgressBar 
+                progress={progress} 
+            />
         </StyledGameInfo>
     );
 }

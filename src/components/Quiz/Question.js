@@ -25,12 +25,17 @@ const Question = () => {
 
     return (
         <StyledQuestion>
-            <h4 dangerouslySetInnerHTML={createMarkup(question)} />
+            <h4 dangerouslySetInnerHTML={createMarkup(question)}></h4>
             <Answers 
                 isAnswered={isAnswered}
                 handleCheckAnswer={handleCheckAnswer} 
             />
-            {isAnswered || <Timer time={15} timeOver={handleCheckAnswer} />}
+            {isAnswered || (
+                <Timer 
+                    time={15} 
+                    timeOver={handleCheckAnswer} 
+                />
+            )}
         </StyledQuestion>
     );
 }

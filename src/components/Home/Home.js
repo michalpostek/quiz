@@ -12,7 +12,9 @@ const Home = ({ startGame }) => {
 
     return (
         <StyledHome>
-            <h2>Select a category</h2>
+            <h2>
+                Select a category
+            </h2>
             <CategoriesWrapper>
                 {data.data.trivia_categories.map(category => {
                     const { id, name } = category;

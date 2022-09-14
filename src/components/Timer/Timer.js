@@ -19,8 +19,12 @@ const Timer = ({ time, timeOver }) => {
     
     return (
         <StyledTimer>
-            <h6>{timeLeft}</h6>
-            <p>seconds left</p>
+            <h6>
+                {timeLeft}
+            </h6>
+            <p>
+                seconds left
+            </p>
         </StyledTimer>
     );
 }
