@@ -48,7 +48,7 @@
     </li>
 </ol>
 
-<h2>Using</h2>
+<h2>Usage</h2>
 
 <ol>
     <li>Choose category</li>
